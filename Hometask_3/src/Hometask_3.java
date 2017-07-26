@@ -12,23 +12,22 @@ public class Hometask_3 {
         int moneyAmount = new Scanner(System.in).nextInt();
 
         System.out.println("Interest per annum");
-        int percentByYear = new Scanner(System.in).nextInt();
+        double percentByYear = new Scanner(System.in).nextInt();
 
         System.out.println("Input deposit duration");
         int depositDuration = new Scanner(System.in).nextInt();
 
-        int totalAmount = 10 ;
-        int percentAmount = 10 ;
-        int year = 10 ;
+        int percentAmount = 0 ;
+        int year = 0 ;
 
         for (int i = 0 ; i < depositDuration  ; i++) {
 
-            percentAmount = (moneyAmount * (percentByYear / 100));
-            totalAmount =  (moneyAmount + percentAmount) ;
+            percentAmount = (int) (moneyAmount * (percentByYear / 100));
+            moneyAmount =  (moneyAmount + percentAmount) ;
             year++;
 
-            System.out.println("Money for " + year + " year(s) = " + totalAmount +
-                    " / Total percents for " + year + " year(s) = " + percentAmount);
+            System.out.println("Money for " + year + " year(s) = " + moneyAmount +
+                    " / 10 percent for " + year + " year  = " + percentAmount);
 
 
         }
