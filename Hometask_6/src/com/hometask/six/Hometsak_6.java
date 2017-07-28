@@ -25,9 +25,7 @@ public class Hometsak_6 {
                 break;
             }
 
-//            System.out.println(total);
-//            System.out.println(check);
-//            System.out.println(Arrays.toString(array));
+
         }
 
 
