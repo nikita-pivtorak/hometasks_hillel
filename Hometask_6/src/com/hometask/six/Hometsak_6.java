@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Hometsak_6 {
-
+// test slack + git integration
     public static void main(String[] args) {
 
         System.out.println("Input the number");
