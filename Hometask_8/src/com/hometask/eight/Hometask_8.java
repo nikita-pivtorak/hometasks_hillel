@@ -9,7 +9,7 @@ public class Hometask_8 {
 
         System.out.println("Enter the number");
         int number = new Scanner(System.in).nextInt();
-
+        number = Math.abs(number);
         int[] array = new int[10];
         int i = 0;
         int result = 0;
