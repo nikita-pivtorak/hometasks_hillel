@@ -1,3 +1,4 @@
+package com.hometask.thirteen;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -17,9 +18,9 @@ public class Hometask_13 {
             System.out.println();
         }
 
-        int arraySum = getSumm(array);
+
         System.out.println("Sum of all elements = " + getSumm(array));
-        System.out.println("Average of all elements = " + getAverage(arraySum, array));
+        System.out.println("Average of all elements = " + getAverage(array));
         System.out.println("Min elemet = " + getMinElement(array));
         System.out.println("Max element = " + getMaxElement(array));
         System.out.println("Positive elements amount = " + countPositiveElements(array));
@@ -81,19 +82,26 @@ public class Hometask_13 {
         return minElement;
     }
 
-    private static double getAverage(int arraySum, int[][] array) {
-        double arrayAverage = (double) arraySum / array.length;
-        return arrayAverage;
+    private static int getAverage(int[][] array) {
+        int sum = 0;
+        ;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < 10; j++) {
+                sum += array[i][j];
+            }
+        }
+        int average = sum / array.length;
+        return average;
     }
 
     private static int getSumm(int[][] array) {
-        int arraySum = 0;
+        int sum = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < 10; j++) {
-                arraySum += array[i][j];
+                sum += array[i][j];
             }
         }
-        return arraySum;
+        return sum;
     }
 
     public static int getRandomNumber(int min, int max) {
